@@ -1,1 +1,9 @@
-[]
+- "!include public_athlete.yaml"
+- "!include public_athlete_team.yaml"
+- "!include public_event.yaml"
+- "!include public_event_type.yaml"
+- "!include public_heat.yaml"
+- "!include public_lane.yaml"
+- "!include public_meet.yaml"
+- "!include public_meet_team.yaml"
+- "!include public_team.yaml"
