@@ -1,0 +1,20 @@
+{
+  "name": "scratch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nhost/hasura-auth-js": "^0.1.9",
+    "@nhost/nhost-js": "^0.3.5",
+    "luxon": "^2.3.0",
+    "nhost-js-sdk": "^3.1.0",
+    "postgres-interval": "^4.0.0"
+  },
+  "type": "module"
+}

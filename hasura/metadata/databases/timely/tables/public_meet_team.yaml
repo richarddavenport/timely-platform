@@ -1,0 +1,17 @@
+table:
+  name: meet_team
+  schema: public
+configuration:
+  custom_column_names:
+    created_at: createdAt
+    meet_id: meetId
+    team_id: teamId
+    updated_at: updatedAt
+  custom_root_fields: {}
+object_relationships:
+- name: meet
+  using:
+    foreign_key_constraint_on: meet_id
+- name: team
+  using:
+    foreign_key_constraint_on: team_id

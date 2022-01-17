@@ -1,0 +1,16 @@
+table:
+  name: athlete
+  schema: public
+configuration:
+  custom_column_names:
+    created_at: createdAt
+    updated_at: updatedAt
+  custom_root_fields: {}
+array_relationships:
+- name: lanes
+  using:
+    foreign_key_constraint_on:
+      column: athlete_id
+      table:
+        name: lane
+        schema: public

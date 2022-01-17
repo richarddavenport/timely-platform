@@ -1,0 +1,17 @@
+table:
+  name: lane
+  schema: public
+configuration:
+  custom_column_names:
+    athlete_id: athleteId
+    created_at: createdAt
+    heat_id: heatId
+    updated_at: updatedAt
+  custom_root_fields: {}
+object_relationships:
+- name: athlete
+  using:
+    foreign_key_constraint_on: athlete_id
+- name: heat
+  using:
+    foreign_key_constraint_on: heat_id

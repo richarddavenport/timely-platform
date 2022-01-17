@@ -1,0 +1,21 @@
+table:
+  name: heat
+  schema: public
+configuration:
+  custom_column_names:
+    created_at: createdAt
+    event_id: eventId
+    updated_at: updatedAt
+  custom_root_fields: {}
+object_relationships:
+- name: event
+  using:
+    foreign_key_constraint_on: event_id
+array_relationships:
+- name: lanes
+  using:
+    foreign_key_constraint_on:
+      column: heat_id
+      table:
+        name: lane
+        schema: public
