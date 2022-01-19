@@ -24,7 +24,7 @@ services:
       HASURA_GRAPHQL_METADATA_DATABASE_URL: postgres://postgres:postgres@db:5432/postgres
       TIMELY_DB: postgres://postgres:postgres@db:5432/postgres
       HASURA_GRAPHQL_ENABLE_CONSOLE: "false"
-      HASURA_GRAPHQL_DEV_MODE: "true"
+      # HASURA_GRAPHQL_DEV_MODE: "true"
       HASURA_GRAPHQL_ENABLED_LOG_TYPES: startup, http-log, webhook-log, websocket-log, query-log
       HASURA_GRAPHQL_ADMIN_SECRET: timelyisawesome
       HASURA_GRAPHQL_UNAUTHORIZED_ROLE: public
@@ -38,10 +38,10 @@ services:
           "CMD-SHELL",
           "apt-get update -y && apt-get install -y curl && curl --fail http://localhost:8080/healthz || exit 1"
         ]
-      interval: 20s
+      interval: 5s
       retries: 5
-      start_period: 20s
-      timeout: 20s
+      start_period: 5s
+      timeout: 5s
 
   hasura-console:
     build:

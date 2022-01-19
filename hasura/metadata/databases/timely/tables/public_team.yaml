@@ -6,3 +6,25 @@ configuration:
     created_at: createdAt
     updated_at: updatedAt
   custom_root_fields: {}
+array_relationships:
+- name: athlete_teams
+  using:
+    foreign_key_constraint_on:
+      column: team_id
+      table:
+        name: athlete_team
+        schema: public
+- name: league_teams
+  using:
+    foreign_key_constraint_on:
+      column: team_id
+      table:
+        name: league_team
+        schema: public
+- name: meet_teams
+  using:
+    foreign_key_constraint_on:
+      column: team_id
+      table:
+        name: meet_team
+        schema: public
