@@ -1,0 +1,10 @@
+html,
+body,
+#svelte {
+  height: 100%;
+}
+
+#svelte {
+  display: flex;
+  flex-direction: column;
+}

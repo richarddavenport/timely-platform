@@ -1,0 +1,12 @@
+query GetLeague {
+  league {
+    name
+    league_teams {
+      id
+      team {
+        id
+        name
+      }
+    }
+  }
+}

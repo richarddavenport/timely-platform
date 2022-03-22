@@ -1,0 +1,5 @@
+node_modules
+build
+.svelte-kit
+graphql.schema.json
+graphql.types.ts

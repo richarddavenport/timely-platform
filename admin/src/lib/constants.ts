@@ -1,0 +1,2 @@
+export const INPUT_DEBOUNCE_TIME_LONG = 1500;
+export const INPUT_DEBOUNCE_TIME_SHORT = 350;

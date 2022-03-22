@@ -1,0 +1,21 @@
+schema:
+  - ${SCHEMA_ENDPOINT:http://localhost:8080/v1/graphql}:
+      headers:
+        x-hasura-admin-secret: timelyisawesome
+documents:
+  - ./src/lib/queries/**/*.graphql
+generates:
+  ./src/lib/graphql.types.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typed-document-node
+    config:
+      dedupeFragments: true
+      useTypeImports: true
+      scalars:
+        numeric: number
+        timestamp: Date
+        timestamptz: Date
+        uuid: string
+        date: string
